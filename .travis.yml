@@ -17,7 +17,7 @@ after_success:
     # login to docker cli
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     # take those images and push them to docker hub
-    - docker push multi-client
-    - docker push multi-server
-    - docker push multi-nginx
-    - docker push multi-worker
+    - docker push mounica19/multi-client
+    - docker push mounica19/multi-server
+    - docker push mounica19/multi-nginx
+    - docker push mounica19/multi-worker
